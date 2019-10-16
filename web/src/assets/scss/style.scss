@@ -120,6 +120,7 @@ p {
   border-radius: 0.1538rem;
   font-size: map-get($font-sizes, 'sm') * $base-font-size;
   padding: 0.2rem 0.6rem;
+  // 英雄列表内的
   &.btn-lg {
     display: flex;
     justify-content: center;
@@ -163,10 +164,19 @@ p {
   background: url(../images/index.png) no-repeat 0 0;
   background-size: 28.8462rem;
   display: inline-block;
+  // 爆料站的样式
   &.sprite-news {
     width: 1.7692rem;
     height: 1.5385rem;
     background-position: 63.546% 15.517%;
+  }
+  // 故事站的样式
+  &.sprite-story_stand {
+    background: url(../images/index.png) no-repeat 0 0;
+    background-size: 28.8462rem 35rem;
+    width: 1.7692rem;
+    height: 1.5385rem;
+    background-position: 90.483% 15.614%;
   }
   &.sprite-arrow{
     width: 0.7692rem;

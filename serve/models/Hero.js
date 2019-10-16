@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const schema = new mongoose.Schema({
 	name: { type: String },
 	avatar: { type: String },
+	banner: { type: String },
 	title: { type: String },
 	categories: [{ type: mongoose.SchemaTypes.ObjectId,ref: 'Category' }],
 	// 角色的评分
@@ -17,6 +18,10 @@ const schema = new mongoose.Schema({
 		icon: { type: String },
 		// 技能的名称
 		name: { type: String },
+		// 冷却值
+		delay: { type: String },
+		// 消耗
+		cost: { type: String },
 		// 技能介绍
 		description: { type: String },
 		// 温馨提示
