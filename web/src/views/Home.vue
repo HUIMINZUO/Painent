@@ -2,22 +2,22 @@
   <div>
     <swiper :options="swiperOption">
       <swiper-slide>
-        <img class="w-100" src="../assets/images/banner1.jpeg" alt />
+        <img class="w-100" src="../assets/images/baoliaozhan.jpeg" alt />
       </swiper-slide>
       <swiper-slide>
-        <img class="w-100" src="../assets/images/banner2.jpeg" alt />
+        <img class="w-100" src="../assets/images/douyu.jpeg" alt />
       </swiper-slide>
       <swiper-slide>
-        <img class="w-100" src="../assets/images/banner3.jpeg" alt />
+        <img class="w-100" src="../assets/images/qie.jpeg" alt />
       </swiper-slide>
       <div class="swiper-pagination pagination-home text-right px-3 pb-1" slot="pagination"></div>
     </swiper>
     <!-- 轮播图结束 -->
     <div class="nav-icons bg-white mt-3 text-center pt-3 text-dark-1">
       <div class="d-flex flex-wrap">
-        <div class="nav-item mb-3" v-for="n in 10" :key="n">
-          <i class="sprite sprite-news"></i>
-          <div class="py-2">爆料站</div>
+        <div class="nav-item mb-3" v-for="n in list" :key="n.name">
+          <i class="sprite sprite-news" :style="{backgroundPosition:n.st}" ></i>
+          <div class="py-2">{{n.name}}</div>
         </div>
       </div>
       <div class="bg-light py-2 fs-sm">
@@ -66,10 +66,32 @@ export default {
   },
   data() {
     return {
+      // 导航栏图标
+      list:[
+        {name:'爆料站',st:'63.546% 15.517%'},
+        {name:'故事站',st:'90.483% 15.614%'},
+        {name:'周边商城',st:'36.746% 0.924%'},
+        {name:'体验服',st:'10.408% 15.517%'},
+        {name:'新人社区',st:'89.733% 1.266%'},
+        {name:'荣耀·传承',st:'36.467% 15.287%'},
+        {name:'同人社区',st:'9.728% 1.266%'},
+        {name:'王者营地',st:'63.3% 0.927%'},
+        {name:'公众号',st:'0 96.207%'},
+        {name:'版本介绍',st:'90.483% 15.614%'},
+        {name:'无限王者团',st:'63.3% 0.927%'},
+        ],
       swiperOption: {
         pagination: {
           el: ".pagination-home"
-        }
+        },
+        //自动轮播
+        autoplay: {
+          delay: 3000
+        },
+        //开启循环模式
+        loop: true,
+        //开启鼠标滚轮控制Swiper切换
+        mousewheel: true
       },
       newsCats: [],
       heroCats: [],
@@ -117,5 +139,8 @@ export default {
       border-right: none;
     }
   }
+}
+swiper-slide {
+  transition: all .4s cubic-bezier(.4, 0, .2, 1);
 }
 </style>

@@ -172,11 +172,63 @@ p {
   }
   // 故事站的样式
   &.sprite-story_stand {
-    background: url(../images/index.png) no-repeat 0 0;
-    background-size: 28.8462rem 35rem;
     width: 1.7692rem;
     height: 1.5385rem;
     background-position: 90.483% 15.614%;
+  }
+  // 周边商城的样式
+  &.sprite-shopping_mall {
+    width: 1.4615rem;
+    height: 1.6923rem;
+    background-position: 36.746% 0.924%;
+  }
+  // 体验服的样式
+  &.sprite-clothes {
+    width: 1.5385rem;
+    height: 1.5385rem;
+    background-position: 10.408% 15.517%;
+  }
+  // 新人专区的样式
+  &.sprite-newer {
+    width: 1.5385rem;
+    height: 1.6154rem;
+    background-position: 89.733% 1.266%;
+  }
+  // 荣耀.传承的样式
+  &.sprite-honour {
+    width: 1.8462rem;
+    height: 1.5385rem;
+    background-position: 36.467% 15.287%;
+  }
+  // 同人社区的样式
+  &.sprite-clothes {
+    width: 2rem;
+    height: 1.6154rem;
+    background-position: 9.728% 1.266%;
+  }
+  // 王者营地的样式
+  &.sprite-clothes {
+    width: 1.8462rem;
+    height: 1.8462rem;
+    background-position: 63.3% 0.927%;
+  }
+  // 公众号的样式
+  &.sprite-clothes {
+    width: 1.8462rem;
+    height: 1.5385rem;
+    background-position: 0 96.207%;
+  }
+  // 版本介绍的样式
+  &.sprite-clothes {
+    width: 1.8462rem;
+    height: 1.8462rem;
+    background-position: 63.3% 0.927%;
+  }
+  // 无限王者团的样式
+  &.sprite-clothes {
+    width: 1.8462rem;
+    height: 1.8462rem;
+    background-position: 63.3% 0.927%;
   }
   &.sprite-arrow{
     width: 0.7692rem;
